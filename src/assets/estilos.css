@@ -1,0 +1,257 @@
+wrapper {
+    overflow:hidden;
+    width:220px;
+    
+}
+.wrapper div {
+   
+    width:1220px;
+    margin-top: -61px;
+	margin-left: 20px;
+
+}
+div.pelicula{
+    height: 389px;
+    width: 470px;
+    float: left;
+    margin-left: 60px;
+}
+div.informacion{
+	    height:500px;
+    width: 100%;
+  margin-top: 
+ 
+	
+}
+
+div.centrado{
+	text-align:center;
+	background-position: center center;
+}
+div.tablasjuntas{
+	
+	text-align:auto;
+	float: left;
+    margin-left: 182px;
+
+  
+}
+table.tablajuntas{
+	margin:auto;
+	display:inline;
+
+  
+}
+th{
+     background-color: #4CAF50;
+    color: white;
+  height: 50px;
+  width:  150px;
+  font: 150% sans-serif;
+     
+}
+td{   
+    background-color: #4CAF50;
+    color: white;font: 150% sans-serif;
+   border-radius: 6px;
+}
+caption{
+   font: 150% sans-serif;
+}
+table.tablalado{
+	display:inline;
+   border-radius: 6px;
+ 
+}
+
+img.banderas {
+    width:100px;
+    height:75px;
+    float:left ;
+    margin:24px 50px 30px 0;
+    max-width: 100% !important;
+      page-break-inside: avoid;
+        border: 0;
+    border-radius: 9px;
+}
+img.poster {
+
+page-break-inside: avoid;
+border: 0;
+width: 233px;
+height: 289.333px;
+margin-left: 6%;
+border-radius: 10px;
+float: left;
+  margin-top: 43px;
+	
+}
+img.loading{
+
+url("/assets/loading.png");
+
+}
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777;
+  text-align: left;
+}
+th {
+  text-align: left;
+
+   border-radius: 6px;
+}
+
+
+label{
+	width:125px ;
+  height:20px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+	display: inline-block;
+		font-family:fantasy;
+	font: bold 90%;
+    color: #999999;
+	font-weight:bold;
+}
+a{
+  color: blue;
+  font-size: 2em;
+}
+
+
+h1.titulo {
+  margin: .67em 0;
+  font-size: 4em;
+  text-align : center;
+  font-family:fantasy;
+	font: bold 90%;
+	font-weight:bold;
+    color: #999999;
+}
+h1.temperatura{
+	
+ margin: .2em 0;
+ font-size: 90px;
+ text-align : center;
+ font-family:fantasy;
+ font: bold 90%;
+ font-weight:bold;
+    color: #999999;
+
+}
+h1.netflix{
+  margin: .67em 0;
+  font-size: 4.4em;
+  text-align : center;
+  font-family:fantasy;
+	font: bold 90%;
+	font-weight:bold;
+	color: #b9090b;
+}
+h1.pelicula{
+	    color: #999999;
+}
+h2{
+    text-align : center;
+    color: #999999;
+  font-size: 2.4em;
+}
+hr{
+  width: 50%;
+
+  margin-top: 1%;
+}
+span{
+	front-size:25px;
+	color:black;
+}
+
+
+body{
+	background-color: #1D1D1D;
+	background-position: center center;
+
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+
+}
+
+p {
+  font-size = 12.5px;
+    color: #999999;
+  display: inline-block;
+margin-bottom: 5px;
+font-weight: 700;
+}
+p.netflix {
+  font: auto;
+    color: #999999;
+  display: inline-block;
+margin-bottom: 5px;
+font-weight: 400;
+   font-family:fantasy;
+}
+button.btn-roll, button.btn-netflix :hover{
+    background-color: #b9090b;
+    color: #fff;
+    border: none;
+    padding: 13px 25px 13px 25px;
+    font-size: 18px;
+  margin-top: 35px;
+  margin-right: 50px;
+  float: right;
+  border-radius: 12px;
+   box-shadow: inset 0 0 0 3px #3a7999;
+
+  
+}
+form-control {
+    background-color: #171717;
+    color: black;
+    border: none;
+  
+}
+.form-control {
+    display: block;
+    width: 20%;
+    height: 27px;
+    padding: 6px 12px;
+    font-size: 24px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid red;
+    border-radius: 20px;
+
+      float:left ;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input[type="text"]{
+  margin-right: 12px;
+  	border: 3px solid green;
+}
+input[type="text"]:disabled {
+   
+   	border: 2px solid red;
+}
+select{
+  float: left;
+  color:#27e70;
+  border-radius: 12px;
+  width: 20%;
+  height: 34px;
+  font-size: 20px;
+  margin-right: 35px;
+
+  
+}

@@ -1,0 +1,65 @@
+ <h1 class= "netflix"> Peliculas y Series de Netflix!	 </h1>
+ <h2>Informaci&#243;n sobre peliculas y series</h2>
+
+ 	<p  class="netflix"> Busque filtrando por titulo, actor, o director para buscar series o peliculas</p>
+ 	 <BR/><BR/>
+ 	<label> filtros: </label>
+
+ <form name="filtros" (ngSubmit)="onSubmit()" >	 
+ 	
+ 	 <select  #opcion [ngModel]="seleccionar()"  (change)="onChange($event, opcion.value)" >
+			<option selected="true" disabled='disabled'>Seleccione </option>	
+			<option *ngFor="let item of _seleccion" >{{item.nombre}}</option></select>
+	
+	<input type="text"  class="form-control" [disabled]=disTitulo    #valTitulo (change)="setTitle(valTitulo.value)" placeholder="T&#237;tulo..." >
+ 	<input type="text"  class="form-control" [disabled]=disActor #valActor (change)="setActor(valActor.value)"  placeholder="Actor..." >
+ 	<input type="text"  class="form-control" [disabled]=disDirector  #valDirector (change)="setDirector(valDirector.value)"  placeholder="Director..."  >
+		<BR/><BR/>
+		<button class="btn-roll" (click)="onBuscar()" [disabled]="disButton" >Buscar</button>
+
+ </form>
+<BR/><BR/>
+
+ <div *ngIf="error"> <h2> No se han encontrado peliculas :( </h2></div>
+ 
+<div *ngIf="peliculas" >
+<BR/><BR/>
+	<div  *ngFor="let item of peliculas" >
+	<div class="informacion">
+		<img class="poster" src="{{item.poster}}"  alt="{{item.show_title}}" >
+		<div class="pelicula">
+			<h1 class="pelicula">{{item.show_title}} ({{item.release_year}})</h1>
+				<p class="netflix"><strong>Netflix Rating:</strong>{{item.rating}}</p>
+				<p class="netflix">{{item.summary}}</p>
+				<p class="netflix"><strong>Director:</strong>{{item.director}}<br></p>
+				<p class="netflix"><strong>Cast:</strong>{{item.show_cast}}</p>
+				<p class="netflix"><strong>Duracion:</strong>{{item.runtime}}</p>
+				
+		</div>
+		
+		</div>
+		<div >
+		<hr>
+		</div>
+	</div>
+</div>
+<div *ngIf="pelicula" >
+	<div class="poster" >
+	<div class="informacion">
+		<img class="poster" src="{{pelicula.poster}}"  alt="{{pelicula.show_title}}" >
+		<div class="pelicula">
+			<h1 class="pelicula">{{pelicula.show_title}} ({{pelicula.release_year}})</h1>
+				<p class="netflix"><strong>Netflix Rating:</strong>{{pelicula.rating}}</p>
+				<p class="netflix">{{pelicula.summary}}</p>
+				<p class="netflix"><strong>Director:</strong>{{pelicula.director}}<br></p>
+				<p class="netflix"><strong>Cast:</strong>{{pelicula.show_cast}}</p>
+				<p class="netflix"><strong>Duracion:</strong>{{pelicula.runtime}}</p>
+				
+		</div>
+		
+		</div>
+		<div >
+		<hr>
+		</div>
+	</div>
+</div>

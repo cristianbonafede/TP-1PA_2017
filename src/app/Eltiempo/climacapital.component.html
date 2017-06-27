@@ -1,0 +1,65 @@
+
+ <div *ngFor="let item of ciudades" >
+ 
+ <h1 class= "titulo"> La temperatura en	{{item.city_name}} </h1>
+ 
+<h1 class = "temperatura"> {{item.temp}} <sup>&#176;</sup> </h1>
+		
+		<BR>
+		<BR>
+		<BR>
+		<BR>
+<div class="centrado">	
+<div class="tablasjuntas">
+	<table class="tablajuntas">
+		<caption>Adem&#225;s</caption>
+		<tbody>
+			<tr><th>Viento</th>
+				<td><span >{{item.wind_spd}} Km/h </span><span> Direcci&#243;n {{item.wind_cdir}}</span>
+				</td>
+			</tr>
+			<tr><th>Humedad</th>
+				<td><span><span>{{item.rh}} <span >%</span></span></span>
+				</td>
+			</tr>
+			<tr><th>Nubosidad</th>
+				<td><span><span>{{item.clouds}} <span >%</span></span></span>
+				</td>
+			</tr>
+
+			<tr><th>Presi&#243;n</th>
+				<td><span>{{item.slp}} KPA <span></span></span>
+				</td>
+			</tr>
+			<tr><th>Visibilidad</th
+				><td><span>{{item.visibility_val}} metros</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="tablasjuntas">
+	<table class="tablalado">
+		<caption>El Sol... </caption>
+		<tbody>
+			<tr><th>Salida del sol:</th>
+				<td><span >{{item.sunrise}} AM ref UTC-0</span>
+				</td>
+			</tr>
+			<tr><th>Puesta del sol:</th>
+				<td><span >{{item.sunset}} PM ref UTC-0</span>
+				</td>
+			</tr>
+			<tr><th>Indice UV</th>
+				<td><span>{{item.uv}} de 10</span>
+				</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+</div>
+</div>
+
+
+ 

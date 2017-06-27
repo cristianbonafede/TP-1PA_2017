@@ -1,0 +1,22 @@
+<h1 class="titulo"> Banderas  del Mundo</h1>
+	<BR> <BR> <BR>
+	 
+<div class="wrapper"   *ngFor="let item of paises"> 
+ 
+ <div>
+ 
+ <label > {{item.name}}</label> </div>
+
+<BR>
+
+  <div> 
+  		
+    <a [routerLink]="['/eltiempo/' +  item.capital + '&country=' + item.name ]" >  <img class="banderas" src="{{item.flag}}"  alt="{{item.name}}"  title="{{item.name}}" >     </a>
+ 
+
+
+  </div> 
+ 
+</div>
+	 
+<BR /><BR />
